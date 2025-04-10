@@ -1,21 +1,18 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore } from "firebase/firestore";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBY3UCSkSbzhoP9RZydMUuNSbXp000y65w",
-  authDomain: "quiz-app-c4072.firebaseapp.com",
-  projectId: "quiz-app-c4072",
-  storageBucket: "quiz-app-c4072.firebasestorage.app",
-  messagingSenderId: "966734352691",
-  appId: "1:966734352691:web:6fd3f1c50d48e64c57ee46",
-  measurementId: "G-TKR7ZPWP3C"
+  apiKey: "AIzaSyBOaJ4-4rYXwOqg4xswmfFjsWxh2Xk55VA",
+  authDomain: "quiz-6837e.firebaseapp.com",
+  databaseURL: "https://quiz-6837e-default-rtdb.firebaseio.com",
+  projectId: "quiz-6837e",
+  storageBucket: "quiz-6837e.firebasestorage.app",
+  messagingSenderId: "474989489839",
+  appId: "1:474989489839:web:4809d6145677e831e32e5a",
+  measurementId: "G-BST06S2VPW"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+export const db = getFirestore(app);
